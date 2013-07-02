@@ -1,3 +1,6 @@
+
+- Forked from https://github.com/boundary/flake to use as dependency in other projects.
+
 # Flake: A decentralized, k-ordered id generation service in Erlang
 
 
