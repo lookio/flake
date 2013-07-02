@@ -71,7 +71,8 @@ init([]) ->
     
     TimestampPath = flake:get_config_value(timestamp_path, "/tmp/flake-timestamp-dets"),
     AllowableDowntime = flake:get_config_value(allowable_downtime, 0),
-
+    
+    io:format("Allowable Downtime = ~w~n", [AllowableDowntime]),
     {ok, TimestampTable} =
 	dets:open_file(timestamp_table,[
 					{estimated_no_objects, 10},

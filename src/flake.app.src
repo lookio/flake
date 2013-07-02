@@ -10,5 +10,6 @@
                   crypto
                  ]},
   {mod, { flake_app, []}},
-  {env, []}
+  {env, [{allowable_downtime, 2592000000}]}
+  
  ]}.
